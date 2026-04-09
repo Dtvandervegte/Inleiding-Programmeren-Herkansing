@@ -1,0 +1,104 @@
+body {
+  background-image: url(images/Diamant\ Achtergrond.png);
+  height: 100vh;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  font-family: Arial, sans-serif;
+}
+
+/* Titel */
+h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #48beff;
+}
+
+/* Score */
+p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #48beff;
+}
+
+/* Diamant knop */
+#diamant {
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.2s, filter 0.2s;
+}
+
+#diamant:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px cyan);
+}
+
+#diamant:active {
+  transform: scale(0.95);
+}
+
+/* Upgrade menu */
+#menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 220px;
+  height: 100%;
+  background-color: #48beff;
+  padding: 20px;
+
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Titel menu */
+#menu h2 {
+  color: white;
+  text-align: center;
+}
+
+/* Knoppen */
+#menu button {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 12px;
+
+  border: none;
+  border-radius: 10px;
+
+  background-color: white;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: transform 0.1s, background-color 0.2s;
+}
+
+#menu button:hover {
+  background-color: gold;
+  transform: scale(1.05);
+}
+
+#menu button:active {
+  transform: scale(0.95);
+}
+
+/* goudendiamant */
+#goudendiamant {
+  position: fixed;
+  display: none;
+  width: 100px;
+  cursor: pointer;
+  z-index: 1000;
+
+  transition: transform 0.2s, filter 0.2s;
+}
+
+#goudendiamant:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 15px yellow);
+}
